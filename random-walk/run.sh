@@ -16,7 +16,3 @@ g++ ./main.cpp -o main.exe
 
 # Plot
 python plot.py
-
-# Clean
-conda deactivate
-conda env remove --name random-walk -y

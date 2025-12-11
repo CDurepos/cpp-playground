@@ -1,7 +1,5 @@
 #include <vector>
 #include <random>
-#include <fstream>
-#include <iostream>
 
 using namespace std;
 
@@ -20,28 +18,4 @@ vector<double> random_walk(int num_steps, double step_size) {
     }
 
     return steps;
-}
-
-int main() {
-    // Walk
-    vector<double> walk = random_walk(100, 3.0);
-
-    // Output
-    ofstream out("walk.csv");
-
-    // Write
-    if(out.is_open()) {
-        out << "time,pos";
-        out << endl;
-        for (int i = 0; i < walk.size(); i++) {
-            out << walk[i];
-            out << ",";
-            out << i;
-            out << endl;
-        }
-
-        out.close();
-    }
-
-    return 0;
 }
