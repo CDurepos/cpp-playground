@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setup conda
-conda create -n random-walk python -y
+conda create -n random-walk python -n
 eval "$(conda shell.bash hook)"
 conda activate random-walk
 
